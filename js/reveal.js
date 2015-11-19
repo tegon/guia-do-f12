@@ -1557,7 +1557,7 @@
 	 */
 	function layout() {
 
-		if( dom.wrapper ) {
+		if( dom.wrapper && !isPrintingPDF() ) {
 
 			var size = getComputedSlideSize();
 
